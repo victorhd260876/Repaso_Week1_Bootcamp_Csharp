@@ -117,7 +117,7 @@ internal class Program
 
 
 		// 2 Challenge
-		Console.WriteLine("EL mismo patron que hicimos con while pero con FOR y usando el mismo número ingresado");
+		Console.WriteLine("EL mismo patron que hicimos con while pero con FOR y usando el mismo número ingresado :");
 
 		for (int i = 1; i <= ValorNumero; i++)
 		{
