@@ -1,14 +1,12 @@
-﻿using System.ComponentModel.Design;
-
-namespace WhileLoop;
+﻿namespace WhileLoop;
 
 internal class Program
 {
-	static void Main(string[] args)
-	{
-		
-		Console.WriteLine("Bienvenido a los while loops");
-		/*	// Escribir un bucle infinito
+    static void Main(string[] args)
+    {
+
+        Console.WriteLine("Bienvenido a los while loops");
+        /*	// Escribir un bucle infinito
 			// int contador = 0;
 			// while (contador <= 10)
 			// {
@@ -50,32 +48,32 @@ internal class Program
 
 
 
-		// Ejercicio de while loop
-		// 1 * * * *
-		// 1 2 * * *
-		// 1 2 3 * *
-		// 1 2 3 4 *
-		// 1 2 3 4 5
-		Console.WriteLine("Ingrese el valor para cuadrado de patrones");
-		int ValorNumero;
-		ValorNumero = Convert.ToInt32(Console.ReadLine());
-		int inicio = 1;
-		while (inicio <= ValorNumero)
-		{
-			int inicio2 = 1;
-			while (inicio2 <= ValorNumero)
-			{
-				if (inicio2 <= inicio)
-				{ Console.Write(inicio2 + " "); }
-				else 
-				{ Console.Write("*" + " "); }
-					inicio2++;
-			}
-			Console.WriteLine();
-			inicio++;
-		}
+        // Ejercicio de while loop
+        // 1 * * * *
+        // 1 2 * * *
+        // 1 2 3 * *
+        // 1 2 3 4 *
+        // 1 2 3 4 5
+        Console.WriteLine("Ingrese el valor para cuadrado de patrones");
+        int ValorNumero;
+        ValorNumero = Convert.ToInt32(Console.ReadLine());
+        int inicio = 1;
+        while (inicio <= ValorNumero)
+        {
+            int inicio2 = 1;
+            while (inicio2 <= ValorNumero)
+            {
+                if (inicio2 <= inicio)
+                { Console.Write(inicio2 + " "); }
+                else
+                { Console.Write("*" + " "); }
+                inicio2++;
+            }
+            Console.WriteLine();
+            inicio++;
+        }
 
-		/*	int contadorDo = 1;
+        /*	int contadorDo = 1;
 			do
 			{
 				Console.WriteLine(contadorDo);
@@ -85,54 +83,54 @@ internal class Program
 			Console.ReadKey();*/
 
 
-		// Crear un bucle tipo for
-		//for (int i = 1; i <= 10; i++)
-		//{
-		//	Console.WriteLine("El valor del bucle for es: " + i);
-		// for (int j = 0; j < i; j++)
-		// {
-		//     Console.Write(j + " ");
-		// }
-		//}
+        // Crear un bucle tipo for
+        //for (int i = 1; i <= 10; i++)
+        //{
+        //	Console.WriteLine("El valor del bucle for es: " + i);
+        // for (int j = 0; j < i; j++)
+        // {
+        //     Console.Write(j + " ");
+        // }
+        //}
 
-		// 1 Challenge
-		// Write a program in C# Sharp to display the multiplication table of a given integer.
-		//     Test Data:
-		// Input the number(Table to be calculated) : 15
-		// Expected Output :
-		// 15 X 1 = 15...
-		// ...
-		// 15 X 10 = 150
+        // 1 Challenge
+        // Write a program in C# Sharp to display the multiplication table of a given integer.
+        //     Test Data:
+        // Input the number(Table to be calculated) : 15
+        // Expected Output :
+        // 15 X 1 = 15...
+        // ...
+        // 15 X 10 = 150
 
-		Console.WriteLine("Ingrese el valor de la tabla de multiplicar");
-		int Numfor;
-		int ResultFor;
-		Numfor = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Ingrese el valor de la tabla de multiplicar");
+        int Numfor;
+        int ResultFor;
+        Numfor = Convert.ToInt32(Console.ReadLine());
 
-		for (int i = 1; i <= 12; i++)
-		{
-			ResultFor = Numfor * i;
-			Console.WriteLine("La tabla del numero: " + Numfor + " es igual a " + Numfor + "x" + i + " = " + ResultFor);
-		}
-
-
-		// 2 Challenge
-		Console.WriteLine("EL mismo patron que hicimos con while pero con FOR y usando el mismo número ingresado :");
-
-		for (int i = 1; i <= ValorNumero; i++)
-		{
-			for (int j = 1; j <= i; j++)
-			{
-				if (j <= i)
-				{ Console.Write(j + " "); }
-				else
-				{ Console.Write("*" + " "); }
-			}
-			Console.WriteLine();
-		}
+        for (int i = 1; i <= 12; i++)
+        {
+            ResultFor = Numfor * i;
+            Console.WriteLine("La tabla del numero: " + Numfor + " es igual a " + Numfor + "x" + i + " = " + ResultFor);
+        }
 
 
+        // 2 Challenge
+        Console.WriteLine("EL mismo patron que hicimos con while pero con FOR y usando el mismo número ingresado :");
+
+        for (int i = 1; i <= ValorNumero; i++)
+        {
+            for (int j = 1; j <= i; j++)
+            {
+                if (j <= i)
+                { Console.Write(j + " "); }
+                else
+                { Console.Write("*" + " "); }
+            }
+            Console.WriteLine();
+        }
 
 
-	}
+
+
+    }
 }
