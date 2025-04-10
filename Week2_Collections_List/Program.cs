@@ -155,7 +155,7 @@ internal class Program
 		// Filtrar el stock por precio mas grande de 10.99 soles
 		// Encontrar el indice del libro que empiece con "El"
 	}
-
+    
 	// Clase auxiliar para demostraciones
 	class Persona
     {
