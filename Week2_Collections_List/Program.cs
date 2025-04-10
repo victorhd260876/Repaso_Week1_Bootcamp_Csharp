@@ -134,7 +134,7 @@ internal class Program
         int indiceMLetra = personas.FindIndex(p => p.Nombre.StartsWith("M"));
         Console.WriteLine($"Índice de la primera persona con nombre que empieza por 'M': {indiceMLetra}");
 
-
+        //observacion
 		// Operaciones del reto
 		// Crear la lista, agregar los valores y hacer las operaciones
 		List<Libro> libros = new List<Libro>
