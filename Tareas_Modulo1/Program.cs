@@ -7,7 +7,11 @@ namespace Tareas_Modulo1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("============================");
+            do
+            {
+
+
+                Console.WriteLine("============================");
             Console.WriteLine("     TAREAS DEL MODULO 1");
             Console.WriteLine("============================");
 
@@ -25,11 +29,11 @@ namespace Tareas_Modulo1
             switch (opcion)
             {
                 case 1:
-                    //Console.WriteLine("Es opcion 1");
+                    Console.WriteLine("Es opcion 1");
                     //Primera_aplicación_Curso_C_ caso1 = new Primera_aplicación_Curso_C_();
                     //caso1.HolaMundo;
-                    calculadora tareacalculadora = new calculadora();
-                    tareacalculadora.calculadora();
+                    //calculadora tareacalculadora = new calculadora();
+                    //tareacalculadora.calculadora();
                     break;
                 case 2:
                     Console.WriteLine("Es opcion 1");
@@ -47,15 +51,14 @@ namespace Tareas_Modulo1
                     Console.WriteLine("No es opcoin valida");
                     break;
             }
+            Console.WriteLine("Continua? S/N");
+            while (Console.ReadLine().ToUpper()=="S")
 
             Console.WriteLine("Saliendo de la aplicacion");
 
+            }
 
 
-
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("Hello, World!");
         }
     }
 }
