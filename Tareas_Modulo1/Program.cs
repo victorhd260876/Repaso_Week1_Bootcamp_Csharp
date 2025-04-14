@@ -16,7 +16,7 @@ namespace Tareas_Modulo1
                 Console.WriteLine("Ingrese opciòn de tareas:");
                 Console.WriteLine("------------------------");
                 Console.WriteLine("( 1 ) : La Calculadora");
-                Console.WriteLine("( 2 ) : Reto de Bucles)");
+                Console.WriteLine("( 2 ) : Reto de Bucles");
                 Console.WriteLine("( 3 ) : Reto de Arrays");
                 Console.WriteLine("( 4 ) : Buscar Duplicados en un Array");
                 Console.WriteLine("( 5 ) : Salir");
@@ -74,8 +74,23 @@ namespace Tareas_Modulo1
 
                     break;
                     case 2:
-                        Console.WriteLine("Es opcion 2");
-                        break;
+                    Console.WriteLine("EL mismo patron que hicimos con while pero con FOR y usando el mismo número ingresado :");
+                    Console.WriteLine("Ingrese el valor para cuadrado de patrones");
+                    int ValorNumero;
+                    ValorNumero = Convert.ToInt32(Console.ReadLine());
+
+                    for (int i = 1; i <= ValorNumero; i++)
+                    {
+                        for (int j = 1; j <= i; j++)
+                        {
+                            if (j <= i)
+                            { Console.Write(j + " "); }
+                            else
+                            { Console.Write("*" + " "); }
+                        }
+                        Console.WriteLine();
+                    }
+                    break;
                     case 3:
                         Console.WriteLine("Es opcion 3");
                         break;
