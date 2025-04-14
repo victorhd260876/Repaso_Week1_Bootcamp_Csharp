@@ -27,8 +27,38 @@ namespace Tareas_Modulo1
                 switch (opcion)
                 {
                     case 1:
-                        Console.WriteLine("Es opcion 1");
-                        break;
+                        Console.WriteLine("numero 1");
+                        double numero1=Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("numero 2");
+                        double numero2 = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("+ - * /");
+                    int operacion;
+                    //char operacion = Console.ReadLine()[0];
+                    Console.WriteLine("( 1 ) : Suma");
+                    Console.WriteLine("( 2 ) : Resta");
+                    Console.WriteLine("( 3 ) : Multiplicaion");
+                    Console.WriteLine("( 4 ) : Division");
+                    Console.WriteLine("( 5 ) : Salir");
+                    operacion = Convert.ToInt32(Console.ReadLine());
+
+                    double resultado = 0;
+                    switch (operacion)
+                    {
+                        case 1:
+                                resultado = numero1 + numero2;
+                                Console.WriteLine(resultado);
+                                break;
+                        case 2:
+                            resultado = numero1 - numero2;
+                            Console.WriteLine(resultado);
+                            break;
+
+                    }
+
+
+
+
+                    break;
                     case 2:
                         Console.WriteLine("Es opcion 2");
                         break;
