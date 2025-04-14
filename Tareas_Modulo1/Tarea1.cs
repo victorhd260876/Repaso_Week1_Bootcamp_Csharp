@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,9 +15,12 @@ namespace Tarea1
             float result;
 
             Console.WriteLine("enter 1st number= ");
-            a = int.Parse(Console.ReadLine());
+            a = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("enter 2nd number= ");
-            b = int.Parse(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
+
+            //opcion = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("1. Addition ");
             Console.WriteLine("2. Subtraction ");
@@ -59,3 +62,5 @@ namespace Tarea1
             Console.ReadKey();
         }
     }
+}
+*/
