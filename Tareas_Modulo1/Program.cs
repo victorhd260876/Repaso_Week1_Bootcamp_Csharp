@@ -283,8 +283,43 @@ namespace Tareas_Modulo1
                     }
                     //break;
                     case 4:
-                        Console.WriteLine("Es opcion 4 BUSCAR DUPLICADOS EN UN ARRAY");
-                        break;
+                        Console.WriteLine("INGRESE 10 NUMEROS PARA BUSCAR DUPLICADOS EN UN ARRAY");
+                    int[] arr = new int[10];
+                    for (int i = 0; i < arr.Length; i++)
+                    {
+                        bool entradanum = false;
+
+                        while (!entradanum)
+                        {
+                            Console.Write($"Número {i + 1}: ");
+                            string ingreso = Console.ReadLine();
+
+                            if (int.TryParse(ingreso, out int numero) && numero >= 0 && numero <= 100)
+                            {
+                                arr[i] = numero;
+                                entradanum = true;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Error: Ingrese un valor numérico entre 0 y 100.");
+                            }
+                        }
+                    }
+
+                    Console.WriteLine();
+
+                    //---------------
+                    //int[] otrosNumeros = new int[] { 10, 20, 30, 40, 50 };
+
+                    //------------
+                    //int[] arr = { 1, 2, 3, 2, 4, 5, 2, 4 };
+
+                           var set = new HashSet<int>();
+                           var duplicates = arr.Where(i => !set.Add(i)).Distinct();
+                    Console.WriteLine("Los números duplicados son:");
+                    Console.WriteLine(String.Join(", ", duplicates));
+
+                    break;
                     case 5:
                         Console.WriteLine("Es opcion 5 SALIR");
                         break;
