@@ -65,7 +65,7 @@ namespace Tareas_Modulo1
                         case 4:
                             resultado = numero1 / numero2;
                             Console.WriteLine(resultado);
-                            break;
+                            break; 
 
                     }
 
