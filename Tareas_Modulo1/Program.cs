@@ -1,4 +1,7 @@
-﻿namespace Tareas_Modulo1
+﻿//using Tarea1;
+//using System;
+
+namespace Tareas_Modulo1
 {
     internal class Program
     {
@@ -22,7 +25,11 @@
             switch (opcion)
             {
                 case 1:
-                    Console.WriteLine("Es opcion 1");
+                    //Console.WriteLine("Es opcion 1");
+                    //Primera_aplicación_Curso_C_ caso1 = new Primera_aplicación_Curso_C_();
+                    //caso1.HolaMundo;
+                    calculadora tareacalculadora = new calculadora();
+                    tareacalculadora.calculadora();
                     break;
                 case 2:
                     Console.WriteLine("Es opcion 1");

@@ -4,9 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tareas_Modulo1
+namespace Tarea1
 {
-    internal class Tarea1
+    public class Tarea1
     {
+ 
+            public void calculadora()
+            {
+            Console.WriteLine("Es opcion 1");
+            }
+
+  
+
+
     }
 }
