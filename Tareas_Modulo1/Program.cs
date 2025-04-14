@@ -49,7 +49,21 @@ namespace Tareas_Modulo1
                                 Console.WriteLine(resultado);
                                 break;
                         case 2:
-                            resultado = numero1 - numero2;
+                                resultado = numero1 - numero2;
+                                Console.WriteLine(resultado);
+                                break;
+                        case 3:
+                            //if (numero1 >= 0)
+                            //{
+                                resultado = numero1 * numero2;
+                                Console.WriteLine(resultado);
+                            //}
+                            //else
+                            //{
+                                break;
+                        //}
+                        case 4:
+                            resultado = numero1 / numero2;
                             Console.WriteLine(resultado);
                             break;
 
