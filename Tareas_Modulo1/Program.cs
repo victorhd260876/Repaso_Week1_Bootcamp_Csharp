@@ -10,16 +10,17 @@ namespace Tareas_Modulo1
             //int opcion2;
            // do
             //{
-                Console.WriteLine("============================");
-                Console.WriteLine("     TAREAS DEL MODULO 1");
-                Console.WriteLine("============================");
+                Console.WriteLine("=========================================");
+                Console.WriteLine("     TAREAS Y PROYECTO DEL MODULO 1");
+                Console.WriteLine("=========================================");
                 Console.WriteLine("Ingrese opciòn de tareas:");
                 Console.WriteLine("------------------------");
                 Console.WriteLine("( 1 ) : La Calculadora");
                 Console.WriteLine("( 2 ) : Reto de Bucles");
                 Console.WriteLine("( 3 ) : Reto de Arrays");
                 Console.WriteLine("( 4 ) : Buscar Duplicados en un Array");
-                Console.WriteLine("( 5 ) : Salir");
+                Console.WriteLine("( 5 ) : PROYECTO 1");
+                Console.WriteLine("( 6 ) : Salir");
 
                 int opcion;
 
@@ -131,6 +132,8 @@ namespace Tareas_Modulo1
                             MostrarDistribucionRangos(calificaciones); 
                             break;
                         case 5:
+
+
                             break;
                         }
                     break;
@@ -321,10 +324,23 @@ namespace Tareas_Modulo1
 
                     break;
                     case 5:
-                        Console.WriteLine("Es opcion 5 SALIR");
+                    //Console.WriteLine("COMO LLAMAR A PROYECTO 1???");
+                        int longitud;
+                        Console.WriteLine("=====================================================");
+                        Console.WriteLine("          GENERADOR DE CONTRASEÑA ALEATORIA");
+                        Console.WriteLine("=====================================================");
+
+                        Console.Write("\nIngrese la longitud de la contraseña: ");
+                        longitud = int.Parse(Console.ReadLine());
+                        //imprime valor de la contraseña generada considerando el valor ingresado y llamando a la clase password
+                        Console.WriteLine("\nLa contraseña generada es: " + Password.GenerarPassword(longitud));
+                        //permite ver el valor en la consola
+                        Console.ReadKey();
                         break;
-                    default:
-                        Console.WriteLine("No es opcoin valida");
+                    case 6:
+                        Console.WriteLine("SALIR");
+                        break;
+                        Console.WriteLine("No es opcion valida");
                         break;
                 }
                 //Console.WriteLine("Continua? S/N");
@@ -336,6 +352,40 @@ namespace Tareas_Modulo1
             //Console.ReadKey();
 
 
+        }
+
+        public static class Password
+        {
+            public static string GenerarPassword(int longitud)
+            {
+                //declaracion de variables
+                string contraseña = string.Empty;
+                string[] letras = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
+                                "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
+                //instancia para generador clase aleatorio
+                Random EleccionAleatoria = new Random();
+                //generando cada uno de los caracteres para construir la contraseña
+                for (int i = 0; i < longitud; i++)
+                {
+                    //genera numero aleatorio entre el metodo next
+                    int LetraAleat = EleccionAleatoria.Next(0, 100);
+
+                    int NumeroAleat = EleccionAleatoria.Next(0, 9);
+                    //si LetraAleat es menor al largo del array letras
+                    if (LetraAleat < letras.Length)
+                    {
+                        //se suma a la cadena de la variable contraseña
+                        contraseña += letras[LetraAleat];
+                    }
+                    else
+                    {
+                        //caso contrario el numero aleatorio se suma a la cadena de la variable contraseña
+                        contraseña += NumeroAleat.ToString();
+                    }
+                }
+                //imprime cadena "contraseña"
+                return contraseña;
+            }
         }
     }
 }

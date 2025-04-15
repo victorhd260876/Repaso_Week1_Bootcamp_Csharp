@@ -13,13 +13,13 @@ namespace Password
         {
             int longitud;
             Console.WriteLine("=====================================================");
-            Console.WriteLine("GENERADOR DE CONTRASEÑA ALEATORIA");
+            Console.WriteLine("          GENERADOR DE CONTRASEÑA ALEATORIA");
             Console.WriteLine("=====================================================");
-            
+
             Console.Write("\nIngrese la longitud de la contraseña: ");
             longitud = int.Parse(Console.ReadLine());
             //imprime valor de la contraseña generada considerando el valor ingresado y llamando a la clase password
-            Console.WriteLine("La contraseña generada es: " + Password.GenerarPassword(longitud));
+            Console.WriteLine("\nLa contraseña generada es: " + Password.GenerarPassword(longitud));
             //permite ver el valor en la consola
             Console.ReadKey();
         }
@@ -55,7 +55,7 @@ namespace Password
                     contraseña += NumeroAleat.ToString();
                 }
             }
-            //Console.WriteLine("CONTRASEÑA GENERADA");
+            //imprime cadena "contraseña"
             return contraseña;
         }
     }
